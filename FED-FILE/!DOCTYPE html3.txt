@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample5</title>
+</head>
+<style>
+     
+      .container2 {
+    float: right;
+    margin: 0%;
+    padding-right: 5px;
+    
+    
+
+  }
+  .container3 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 150px;
+    font-family: Trebuchet;
+    padding-left: 18px;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-family: Century Gothic;
+    padding-left: 20px;
+  }
+  .chef {
+    width: 750px;
+    height: 650px;
+    padding: 0%;
+
+  }
+  h1{
+    padding-top: 350px;
+    padding-left:560px;
+    font-size:30px;
+  }
+  .container5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-family: Century Gothic;
+    padding-left: 20px; 
+  }
+  .linuximg {
+    height: 500px;
+
+    width: 730px;
+    float: left;
+    padding-top: 90px;
+  }
+
+  .linux-detail {
+    padding-top: 170px;
+    padding-left: 3px;
+  }
+  .container6 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+
+    padding-top: 150px;
+    font-family: Trebuchet;
+    padding-left: 18px;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .container7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+
+    font-family: Century Gothic;
+    padding-left: 20px;
+  }
+  .container8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+
+    font-family: Century Gothic;
+    padding-left: 20px;
+  }
+   .container9{
+    float: right;
+    margin: 0%;
+    padding-right: 5px;
+    padding-top:140px;
+   }
+   .linux-details{
+    padding-top: 200px;
+
+   }
+   .cont{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    letter-spacing: 2px;
+    font-family: Century Gothic;
+    padding-left: 20px;
+    
+   }
+   .cont2{
+   display: flex;
+    align-items: right;
+    justify-content: right;
+    letter-spacing: 2px;
+    font-family: Century Gothic;
+    padding-right: 360px;
+   }
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+  footer {
+    /* position: fixed;   */
+    background: rgb(161, 199, 177);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 600px;
+    
+    
+
+  }
+
+  footer::before {
+    content: '';
+    /* position: absolute;   */
+    left: 0;
+    top: 100px;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+  }
+
+  footer .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+  }
+
+  footer .content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .content .top .logo-details {
+    color: #000;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
+  .content .top .media-icons {
+    display: flex;
+  }
+
+  .content .top .media-icons a {
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+
+  .top .media-icons a:nth-child(1) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(1):hover {
+    color: #4267B2;
+    background: #fff;
+  }
+
+  .top .media-icons a:nth-child(2) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(2):hover {
+    color: #1DA1F2;
+    background: #fff;
+  }
+
+  .top .media-icons a:nth-child(3) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(3):hover {
+    color: #E1306C;
+    background: #fff;
+  }
+
+  .top .media-icons a:nth-child(4){  
+  background: #0077B5;  
+ }  
+ .top .media-icons a:nth-child(4):hover{  
+  color: #0077B5;  
+  background: #fff;  
+ }  
+  .top .media-icons a:nth-child(4) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(4):hover {
+    color: #FF0000;
+    background: #fff;
+  }
+
+  footer .content .link-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .content .link-boxes .box {
+    width: calc(100% / 5 - 10px);
+  }
+
+  .content .link-boxes .box .link_name {
+    color: #000;
+    font-size: 25px;
+    font-weight: 650;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .link-boxes .box .link_name::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: #000;
+  }
+
+  .content .link-boxes .box li {
+    margin: 6px 0;
+    list-style: none;
+  }
+
+  .content .link-boxes .box li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease
+  }
+
+  .content .link-boxes .box li a:hover {
+    opacity: 2;
+    text-decoration: none;
+  }
+
+  .content .link-boxes .input-box {
+    margin-right: 55px;
+  }
+
+  .link-boxes .input-box input {
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #AFAFB6;
+    background: #140B5C;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #000;
+    margin-top: 5px;
+  }
+
+  .link-boxes .input-box input::placeholder {
+    color: #AFAFB6;
+    font-size: 16px;
+  }
+
+  .link-boxes .input-box input[type="button"] {
+    background: #000;
+    color: #140B5C;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+
+  .input-box input[type="button"]:hover {
+    opacity: 1;
+  }
+
+  footer .bottom-details {
+    width: 100%;
+    background: #2c303a;
+  }
+
+  footer .bottom-details .bottom_text {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+  .bottom-details .bottom_text a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  .bottom-details .bottom_text a {
+    margin-right: 10px;
+  }
+
+  /Media query/
+
+
+  @media (max-width: 900px) {
+    footer .content .link-boxes {
+      flex-wrap: wrap;
+    }
+
+    footer .content .link-boxes .input-box {
+      width: 40%;
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    footer {
+      position: relative;
+    }
+
+    .content .top .logo-details {
+      font-size: 26px;
+    }
+
+    .content .top .media-icons a {
+      height: 35px;
+      width: 35px;
+      font-size: 14px;
+      line-height: 35px;
+    }
+
+    footer .content .link-boxes .box {
+      width: calc(100% / 3 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+      width: 60%;
+    }
+
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    footer::before {
+      top: 145px;
+    }
+
+    footer .content .top {
+      flex-direction: column;
+    }
+
+    .content .top .media-icons {
+      margin-top: 16px;
+    }
+
+    footer .content .link-boxes .box {
+      width: calc(100% / 2 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+      width: 100%;
+    }
+  }
+
+  .last {
+    background-color: #000000eb;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    font-family: candara;
+    padding: 15px 450px;
+  }
+
+  .reserve {
+    padding: 4px;
+    word-spacing: 7px;
+    letter-spacing: 1px;
+
+
+  }
+
+  .reserve:hover {
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+  .no:hover {
+    cursor: auto;
+  }
+
+  .sig {
+    color: black;
+  }
+  .tet{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 40px;
+    padding-left: 380px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+</style>
+<body>
+  <section>
+    <div class="container2">
+        <image src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_800,q_75,w_1200/v1/clients/kelowna/112_3_15390_jpeg_58f5a5ab-04e5-4a5b-b8e3-578d73ceecee.jpg" class="chef"></image>
+    </div>
+    <h1 class="container3">EVENTS</h1>
+    <p style="font-size:18px" class="container4">Celebrate in the heart of Seoul Harbour at one of Korea’s most awarded restaurants, with panoramic views encompassing the Seoul Han Bridge and Korea Opera House</p>
+    <p style="font-size:18px" class="container5">- Curate your perfect event at Clair de lune, from intimate dinner parties in the Private Dining Room, to long lunches in the spectacular Upper Tower. –  Clair de lune delivers an immersive dining experience with views like no other.</p>
+    <div class="cont">FOR MORE DETAILS :  <a href="#">clairdelune@mail.com</a></div>
+  </section>
+<section>
+<div class="linux-detail">
+  <img src="https://www.theknot.com/tk-media/images/18b39993-49ca-4f55-9cdf-9bdbe285e955" class="linuximg">
+  <h1 class="container6">WEDDINGS</h1>
+  <p style="font-size:18px" class="container7">Clair de lune welcomes both small and large wedding parties to celebrate in the heart of Korea Harbour. With bespoke menus by Executive Chef Kish Gilmore and panoramic views from the Harbour Bridge to the Opera House, CLair de lune provides an exquisite setting for your most special day.</p>
+  <p style="font-size:18px" class="container8">With two exclusive reception spaces, Clair de lune can accommodate small receptions for up to 20 guests in the Upper Tower</p>
+</div>
+<div class="cont2">FOR MORE DETAILS <a href="#">clairdelune@mail.com</a></div>
+</section>
+<section>
+  <div class="container9">
+    <image src="https://www.quay.com.au/wp-content/uploads/2022/02/AB5I6922_NikkiTo.jpg" class="chef"></image>
+</div>
+<h1 class="container3">UPPER TOWER</h1>
+<p style="font-size:18px" class="container4">Clair de lune’s Upper Tower is arguably Korea’s most spectacular dining room. Floor to ceiling glass windows allow for views spanning Seoul Harbour, taking in Circular, the Korea Opera House, the Han Bridge and the historical charm of The Rocks.</p>
+<p style="font-size:18px" class="container5"> The private room is perched above the main dining room, and seats up to 20 guests for lunch, Thursday through Sunday.</p>
+
+<div class="cont">FOR MORE DETAILS <a href="#">clairdelune@mail.com</a></div>
+
+</section>
+<section>
+  <div class="linux-details">
+    <img src="https://www.quay.com.au/wp-content/uploads/2018/08/PD1.jpg" class="linuximg">
+    <h1 class="container6">PRIVATE DINNING</h1>
+    <p style="font-size:18px" class="container7">Overlooking the Korea Opera House, the Private Dining Room at Clair de lune seats up to ten guests. Featuring a floor to ceiling mirror to capture the Korea Opera House view for all guests, an elliptical spotted gum dining table, and walls adorned by overlapping fabric veils referencing the colours of Korea gum leaves on the forest floor, each thoughtful detail in the room creates a warm, inclusive space.</p>
+    
+  </div>
+  <div class="cont2">FOR MORE DETAILS <a href="#">clairdelune@mail.com</a></div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+        <div class="tet">‘‘Make memories with your beloved one's in clair de lune’’</div>
+        <br>
+
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <span class="logo_name">CLAIR DE</span>
+          <p>LUNE &#127869</p>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/arlogreyaustin/"><i class="fa fa-instagram"></i></a>
+          <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   -->
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">SITEMAP</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Kristen Kish</a></li>
+          <li><a href="#">Meet the Team</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">LOCATION</li>
+          <li><a href="#" class="no">111 E Cesar Chavez St,</a></li>
+          <li><a href="#" class="no">SEOUL, TX 78701,</a></li>
+          <li><a href="#" class="no">KOREA.</a></li>
+          <li><a href="#" class="no">Phone no : 99 &nbsp1274&nbsp 0244</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">OPENING HOURS</li>
+          <li><a href="#" class="no">LUNCH</a></li>
+          <li><a href="#" class="no">Saturday and Sunday</a></li>
+          <li><a href="#" class="no">Reservetions from 12pm to 1.30pm </a></li>
+
+          <li><a href="#" class="no">DINNER</a></li>
+          <li><a href="#" class="no">Thursday to Sunday</a></li>
+          <li><a href="#" class="no">Reservations from 6pm to 8.45pm</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">RESERVETIONS</li>
+          <li><a href="#" class="reserve">MAKE A RESRVETION</a></li>
+          <li><a href="#" class="no">Tel no : 512-478-2991</a></li>
+
+        </ul>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <div class="last">
+    <span class="last2">© CLAIR DE LUNE 2023 ALL RIGHTS RESERVED</span>
+  </div>
+
+</body>
+</html>

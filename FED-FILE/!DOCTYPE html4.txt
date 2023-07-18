@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample2</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    img{
+        height:800px;
+        width:1525px;
+    }
+    .firstcontainer{
+  position: relative;
+  text-align: center;
+  color: white;
+
+    }
+    .centered {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-family: serif;
+    font-size: 100px;
+    animation: fadeIn 3.5s;
+    font-size: 100px;
+    font-weight: 450;
+    letter-spacing: 7px;
+    word-spacing: 12px;
+}
+.second{
+    font-family: serif Georgia, 'Times New Roman', Times, serif;
+    padding-left: 150px;
+    padding-top: 50px;
+    padding-right: 100px;
+    font-size: 25px;
+    
+}
+.third{
+     font-family: serif Georgia, 'Times New Roman', Times, serif;
+    padding-left: 150px;
+    padding-top: 50px;
+    padding-right: 100px;
+    font-size: 25px;
+}
+.fouth{
+    font-family: serif Georgia, 'Times New Roman', Times, serif;
+    padding-left: 150px;
+    padding-top: 50px;
+    padding-right: 100px;
+    font-size: 25px;
+}
+ .five{
+    font-family: serif Georgia, 'Times New Roman', Times, serif;
+    padding-left: 520px;
+    padding-top: 70px;
+    padding-right: 100px;
+    font-size: 40px;
+    /* word-spacing: 5px; */
+    /* letter-spacing: 3px; */
+ }
+ .six{
+    font-family: serif Georgia, 'Times New Roman', Times, serif;
+    padding-left: 520px;
+    padding-top: 20px;
+    padding-right: 100px;
+  word-spacing: 5px;
+    font-size: 25px;
+ }
+ .seven{
+    font-family: serif Georgia, 'Times New Roman', Times, serif;
+    padding-left: 530px;
+    padding-top: 20px;
+    padding-right: 100px;
+    font-size: 25px;
+    word-spacing: 5px;
+ }
+ .eight{
+    font-family: serif Georgia, 'Times New Roman', Times, serif;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 100px;
+    font-size: 25px;
+    word-spacing: 5px;
+    padding-bottom: 50px;
+ }
+ .nine{
+  font-family: serif Georgia, 'Times New Roman', Times, serif;
+    padding-left: 510px;
+    padding-top: 25px;
+    padding-right: 100px;
+    font-size:20px;
+    word-spacing: 5px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    font-style: italic;
+
+ }
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* *{  
+margin: 0;  
+padding: 0;  
+box-sizing: border-box;  
+font-family: "Poppins" , sans-serif;  
+}  
+body{  
+min-height: 100vh;  
+width: 100%;  
+background: #EEECEB;   */
+/* }   */
+footer {
+  /* position: fixed;   */
+  background: rgb(161, 199, 177);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 550px;
+
+}
+
+footer::before {
+  content: '';
+  /* position: absolute;   */
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+
+footer .content .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.content .top .logo-details {
+  color: #000;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.content .top .media-icons {
+  display: flex;
+}
+
+.content .top .media-icons a {
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #000;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.top .media-icons a:nth-child(1) {
+  background: none;
+}
+
+.top .media-icons a:nth-child(1):hover {
+  color: #4267B2;
+  background: #fff;
+}
+
+.top .media-icons a:nth-child(2) {
+  background: none;
+}
+
+.top .media-icons a:nth-child(2):hover {
+  color: #1DA1F2;
+  background: #fff;
+}
+
+.top .media-icons a:nth-child(3) {
+  background: none;
+}
+
+.top .media-icons a:nth-child(3):hover {
+  color: #E1306C;
+  background: #fff;
+}
+
+/* .top .media-icons a:nth-child(4){  
+background: #0077B5;  
+}  
+.top .media-icons a:nth-child(4):hover{  
+color: #0077B5;  
+background: #fff;  
+}   */
+.top .media-icons a:nth-child(4) {
+  background: none;
+}
+
+.top .media-icons a:nth-child(4):hover {
+  color: #FF0000;
+  background: #fff;
+}
+
+footer .content .link-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .content .link-boxes .box {
+  width: calc(100% / 5 - 10px);
+}
+
+.content .link-boxes .box .link_name {
+  color: #000;
+  font-size: 25px;
+  font-weight: 650;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.link-boxes .box .link_name::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #000;
+}
+
+.content .link-boxes .box li {
+  margin: 6px 0;
+  list-style: none;
+}
+
+.content .link-boxes .box li a {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+
+.content .link-boxes .box li a:hover {
+  opacity: 2;
+  text-decoration: none;
+}
+
+.content .link-boxes .input-box {
+  margin-right: 55px;
+}
+
+.link-boxes .input-box input {
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #140B5C;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #000;
+  margin-top: 5px;
+}
+
+.link-boxes .input-box input::placeholder {
+  color: #AFAFB6;
+  font-size: 16px;
+}
+
+.link-boxes .input-box input[type="button"] {
+  background: #000;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.input-box input[type="button"]:hover {
+  opacity: 1;
+}
+
+footer .bottom-details {
+  width: 100%;
+  background: #2c303a;
+}
+
+footer .bottom-details .bottom_text {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.bottom-details .bottom_text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.bottom-details .bottom_text a {
+  margin-right: 10px;
+}
+
+/Media query/
+
+
+@media (max-width: 900px) {
+  footer .content .link-boxes {
+    flex-wrap: wrap;
+  }
+
+  footer .content .link-boxes .input-box {
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    position: relative;
+  }
+
+  .content .top .logo-details {
+    font-size: 26px;
+  }
+
+  .content .top .media-icons a {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+
+  footer .content .link-boxes .box {
+    width: calc(100% / 3 - 10px);
+  }
+
+  footer .content .link-boxes .input-box {
+    width: 60%;
+  }
+
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  footer::before {
+    top: 145px;
+  }
+
+  footer .content .top {
+    flex-direction: column;
+  }
+
+  .content .top .media-icons {
+    margin-top: 16px;
+  }
+
+  footer .content .link-boxes .box {
+    width: calc(100% / 2 - 10px);
+  }
+
+  footer .content .link-boxes .input-box {
+    width: 100%;
+  }
+}
+
+.last {
+  background-color: #000000eb;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+  font-family: candara;
+  padding: 15px 450px;
+}
+
+.reserve {
+  padding: 4px;
+  word-spacing: 7px;
+  letter-spacing: 1px;
+
+
+}
+
+.reserve:hover {
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.no:hover {
+  cursor: auto;
+}
+</style>
+<body>
+    <section>
+        <div class="firstcontainer">
+        <img src="https://wallpapercave.com/wp/wp2878153.jpg">
+        </div>
+    <div class="centered">DUST OFF YOUR
+        BOTTLES</div>
+    </section>
+    <section>
+        <div class="second">
+        The opportunity wine enthusiasts have been waiting for – Clair De Lune is unlocking the private dining room for guests to bring along their best bottles to enjoy over a weekend lunch. If you’ve got a cellar full of wine, or even just ‘that’ bottle you’ve been desperate to dust off, there is no better way to enjoy it than in one of Korea’s best restaurants. 
+        </div>
+        <div class="third">
+            Guests are invited to hand over their bottle to Clair De Lune’s sommeliers to be decanted and enjoyed throughout Peter Gilmore’s award-winning eight-course menu.
+        </div>
+        <div class="fouth">
+            Dust Off Your Bottles is available for Saturday and Sunday lunch for a limited time until the end of October, in our 10-seater private dining room and requires a minimum of eight guests. 
+
+ 
+        </div>
+        <div class="five">Dust Off Your Bottles</div>
+        <div class="six">Six-course menu by Kristen Kish</div>
+        <div class="seven"> Saturday and Sunday lunch only</div>
+        <div class="eight">We recommend our guests drop their bottles off prior to their lunch so our team can ensure they are service temperature.   </div>
+        <div class="nine">FOR MORE DETAILS <a href="#">clairdelune@mail.com</a></div>
+    </section>
+    <footer>
+        <div class="content">
+          <div class="top">
+            <div class="logo-details">
+              <span class="logo_name">CLAIR DE</span>
+              <p>LUNE &#127869 &#127869 &#127869</p>
+            </div>
+            <div class="media-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/arlogreyaustin/"><i class="fa fa-instagram"></i></a>
+              <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   -->
+              <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="link-boxes">
+            <ul class="box">
+              <li class="link_name">SITEMAP</li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Kristen Kish</a></li>
+              <li><a href="#">Meet the Team</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">LOCATION</li>
+              <li><a href="#" class="no">111 E Cesar Chavez St,</a></li>
+              <li><a href="#" class="no">Austin, TX 78701,</a></li>
+              <li><a href="#" class="no">USA.</a></li>
+              <li><a href="#" class="no">Phone no : 99 &nbsp1274&nbsp 0244</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">OPENING HOURS</li>
+              <li><a href="#" class="no">LUNCH</a></li>
+              <li><a href="#" class="no">Saturday and Sunday</a></li>
+              <li><a href="#" class="no">Reservetions from 12pm to 1.30pm </a></li>
+    
+              <li><a href="#" class="no">DINNER</a></li>
+              <li><a href="#" class="no">Thursday to Sunday</a></li>
+              <li><a href="#" class="no">Reservations from 6pm to 8.45pm</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">RESERVETIONS</li>
+              <li><a href="#" class="reserve">MAKE A RESRVETION</a></li>
+              <li><a href="#" class="no">Tel no : 512-478-2991</a></li>
+    
+            </ul>
+          </div>
+        </div>
+        </div>
+      </footer>
+      <div class="last">
+        <span class="last2">© CLAIR DE LUNE 2023 ALL RIGHTS RESERVED</span>
+      </div>
+    
+    
+
+</body>
+</html>

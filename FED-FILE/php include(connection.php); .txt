@@ -1,0 +1,99 @@
+<?php include("connection.php"); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rehman.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url('https://wallpapercave.com/wp/wp1867536.jpg');
+    }
+    .container{
+
+      margin: 100px 550px;
+    }
+    .submit{
+        padding-left: 70px;
+        padding-top: 10px;
+    }
+    .sub:hover{
+        background-color: rgba(0, 0, 0, 0.385);
+        color: aliceblue;
+        cursor: pointer;
+        
+    }
+    .sub{
+        padding-left:13px;
+        padding-right: 13px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+</style>
+<body>
+
+    <div class="container">
+    <form action="#" method="POST">
+        <fieldset>
+            <legend style="color:white">USER INFO :-</legend>
+        <label style="color:white">Name:</label><input name="name" type="text" /> 
+        <br>
+        <br>
+        <label style="color:white">GENDER : </label><input name="gender" type="text"/>
+        <br>
+        <br>
+        
+        <label style="color:white">MEMBERS</label><input name="members" type="text"/>
+        <br>
+        <br>
+        <label STyle="color:white">TIME :</label><input name="time" type="time"/>
+       <br>
+       <br>
+       <label style="color:white">DATE :</label><input name="date" type="date"/>
+       <br>
+       <br>
+        <label style="color:white">E-Mail</label>
+       <input  name="email" type="email" >
+            <br>
+            <br>
+        <textarea cols="20" name="comments" rows="5">Comment()</textarea><br />
+        <br>
+        <div class="submit">
+        <input type="submit" value="Submit" class="sub" >
+        </div>
+        </fieldset>
+    </form>
+    </div>
+    
+</body>
+</html>
+
+<?php
+    
+    $name = $_POST['name'];
+    $gender = $_POST['gender'];
+    $members = $_POST['members'];
+    $time = $_POST['time'];
+    $date = $_POST['date'];
+    $email = $_POST['email'];
+    $comments = $_POST['comments'];
+
+    $query = "INSERT INTO lalli values('$name','$gender','$members','$time','$date','$email','$comments')";
+    $data = mysqli_query($conn,$query);
+
+    if($data)
+    {
+        echo "<script>alert('your registartion is successfull');
+          </script>";
+
+    }
+    else
+    {
+        echo"Invalid reservation";
+
+    }
+    ?>

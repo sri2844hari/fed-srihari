@@ -1,0 +1,28 @@
+<?php 
+
+
+include("connection.php"); 
+
+
+
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $pwd = $_POST['password'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $address = $_POST['address'];
+
+        $query = "INSERT INTO booking values('$fname','$lname','$pwd','$email','$phone','$address')";
+        $data = mysqli_query($conn,$query);
+
+        if($data)
+        {
+            echo "<script>alert('your registration is successfull');
+            window.location.replace('finalcode.php');</script>";
+        } 
+        else
+        {
+            echo "Invalid Data";
+        }
+    
+?>

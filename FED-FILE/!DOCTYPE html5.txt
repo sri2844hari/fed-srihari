@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample7</title>
+</head>
+<style>
+      .container2 {
+    float: right;
+    margin: 0%;
+    padding-right: 5px;
+    padding-top: 15px;
+    
+    
+
+  }
+  .container3 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 150px;
+    font-family: Trebuchet;
+    padding-left: 18px;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-family: Century Gothic;
+    padding-left: 20px;
+  }
+  .chef {
+    width: 750px;
+    height: 550px;
+    padding: 0%;
+
+  }
+  h1{
+    padding-top: 350px;
+    padding-left:560px;
+    font-size:30px;
+  } .linuximg {
+    height: 500px;
+
+    width: 730px;
+    float: left;
+    padding-top: 75px;
+  }
+
+  .linux-detail {
+    padding-top: 120px;
+    padding-left: 3px;
+  }
+  .container6 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+
+    padding-top: 150px;
+    font-family: Trebuchet;
+    padding-left: 18px;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .container8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+
+    font-family: Century Gothic;
+    padding-left: 20px;
+  }
+.container9{
+    float: right;
+    margin: 0%;
+    padding-right: 5px;
+    padding-top: 230px;   
+}
+
+.linux-details{
+    padding-top: 150px;
+    padding-left: 3px;   
+}
+</style>
+<body>
+    <section>
+        <div class="container2">
+            <image src="https://www.opentable.com/blog/wp-content/uploads/sites/108/2020/04/arlo-grey_mafaldini-03_alex-parker.jpg" class="chef"></image>
+        </div>
+        <h1 class="container3">KRISTEN KISH</h1>
+        <p style="font-size:18px" class="container4">Top Chef winner Kristen Kish's mafaldine with champignon sauce.Her knack for working magic
+            with mushrooms became known to the public during her winning 2013 stint on Top Chef season 10.
+           “People often tell our servers, ‘Oh, I love the way she cooked mushrooms’ or ‘She taught me
+            how to do so much with mushrooms,” Kish says. “It’s something I don’t think will be forgotten, and I’m okay with
+            that. I’m associated with cooking white button mushrooms until the end of time!”</p>
+        </section>
+        <section>
+            <div class="linux-detail">
+              <img src="https://jenniferguerrerodotcom.files.wordpress.com/2017/11/kristenkish3.jpg?w=768" class="linuximg">
+              <h1 class="container6">MORE DISHES : </h1>
+              <p style="font-size:18px" class="container8">Salmon with English Pea, Artichoke, and Pancetta – p 108. The salmon is incredibly tender and it’s richness is perfectly complemented by the salty pancetta, baby artichokes cooked in wine and everything good, and sweet, buttery pea puree. Delicious. I should have cut it open for the pic. The inside is a perfect bright coral medium rare.</p>
+            </div>
+            </section>
+            <section>
+                <section>
+                    <div class="container9">
+                        <image src="https://jenniferguerrerodotcom.files.wordpress.com/2017/11/kristenkish2.jpg?w=768" class="chef"></image>
+                    </div>
+                    <h1 class="container3">MORE :</h1>
+                    <p style="font-size:18px" class="container4">Beet and Nectarine with Crunchy Seeds and Bayrischer Blue Cheese – p 87. Beautiful dish, with a lovely balance between the earthy beets, sweet nectarines, punch of blue cheese, and crunch of the seeds. Stone fruit is no longer in season, so I had to go with frozen peaches. I can’t wait for a do-over when the nectarines are ripe on our tree next summer.</p>
+                    </section>
+            </section>
+            <section>
+                <div class="linux-details">
+                  <img src="https://abagofflour.files.wordpress.com/2015/10/pear-tart-with-hazelnut-frangipane-abagofflour-com-51.jpg?w=1200" class="linuximg">
+                  <h1 class="container6">Pear and Hazelnut Frangipane Tart </h1>
+                  <p style="font-size:18px" class="container8">Frangipane is a brilliant way to make any fruit into a fabulous dessert. Here, supple Bosc or Anjou pears pair with toasty hazelnuts.</p>
+                </div>
+                </section>
+</body>
+</html>

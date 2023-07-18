@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample4
+    </title>
+</head>
+<style>
+    body{
+        background-color: snow;
+
+    }
+      .container2 {
+    float: right;
+    padding-top: 0px;
+    padding-right: 5px;
+    
+
+  }
+    .container3 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 150px;
+    font-family: Trebuchet;
+    padding-left: 18px;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-family: Century Gothic;
+    padding-left: 20px;
+  }
+  .chef {
+    width: 775px;
+    height: 750px;
+    border-radius: 10px;
+
+  }
+  h1{
+    padding-top: 350px;
+    padding-left:560px;
+    font-size:30px;
+  }
+  .hh{
+    padding-top: 50px;
+    padding-left:560px;
+    font-size:30px;
+  }
+  .cont1{
+    padding-top: 40px;
+    padding-left:480px;
+    font-size:20px;
+  }
+  .cont2{
+    padding-top: 40px;
+    padding-left:580px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .cont3{
+    padding-top: 30px;
+    padding-left:500px;
+    font-size:20px;
+  }
+  .cont4{
+    padding-top: 40px;
+    padding-left:645px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .cont5{
+    padding-top: 30px;
+    padding-left:560px;
+    font-size:20px;
+  }
+  .cont6{
+    padding-top: 40px;
+    padding-left:645px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .cont7{
+    padding-top: 30px;
+    padding-left:560px;
+    font-size:20px;
+  }
+  .cont8{
+    padding-top: 10px;
+    padding-left:600px;
+    font-size:20px;
+  }
+  .cont9{
+    padding-top: 40px;
+    padding-left:645px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .cont10{
+    padding-top: 30px;
+    padding-left:560px;
+    font-size:20px;
+  }
+  .cont11{
+    padding-top: 10px;
+    padding-left:600px;
+    font-size:20px;
+  }
+  .cont12{
+    padding-top: 40px;
+    padding-left:645px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .cont13{
+    padding-top: 30px;
+    padding-left:560px;
+    font-size:20px;
+  }
+  .cont14{
+    padding-top: 40px;
+    padding-left:660px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .cont15{
+    padding-top: 30px;
+    padding-left:560px;
+    font-size:20px;
+  }
+  .con1{
+    padding-top: 40px;
+    padding-left:500px;
+    font-size:20px;
+  }
+  .con2{
+    padding-top: 40px;
+    padding-left:645px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .con3{
+    padding-top: 30px;
+    padding-left:560px;
+    font-size:20px;
+  }
+  .con4{
+    padding-top: 40px;
+    padding-left:655px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .con5{
+    padding-top: 30px;
+    padding-left:560px;
+    font-size:20px;
+  }
+  .con6{
+    padding-top: 40px;
+    padding-left:645px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .con7{
+    padding-top: 30px;
+    padding-left:580px;
+    font-size:20px;
+  }
+  .con8{
+    padding-top: 40px;
+    padding-left:670px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .con9{
+    padding-top: 40px;
+    padding-left:645px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .con10{
+    padding-top: 30px;
+    padding-left:560px;
+    font-size:20px;
+  }
+  .con11{
+    padding-top: 10px;
+    padding-left:540px;
+    font-size:20px;
+  }
+  .con12{
+    padding-top: 40px;
+    padding-left:645px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .con13{
+    padding-top: 30px;
+    padding-left:560px;
+    font-size:20px;
+  }
+  .con14{
+    padding-top: 40px;
+    padding-left:660px;
+    font-size:20px;
+    font-weight: 1000;
+    font-size: 20px;
+  }
+  .con15{
+    padding-top: 30px;
+    padding-left:560px;
+    font-size:20px;
+  }
+
+  .image2{
+    height:230px;
+    width:400px;
+    padding-left:500px;
+    padding-top: 20px;
+   
+
+  }
+  .image4{
+    height:270px;
+    width:400px;
+    padding-left:500px;
+    padding-top: 30px;
+  }
+  .image6{
+    height:250px;
+    width:400px;
+    padding-left:500px;
+    padding-top: 30px;
+  }
+  .image8{
+    height:250px;
+    width:400px;
+    padding-left:500px;
+    padding-top: 30px;
+  }
+  .image10{
+    height:250px;
+    width:400px;
+    padding-left:500px;
+    padding-top: 30px;
+  }
+  .image12{
+    height:250px;
+    width:400px;
+    padding-left:500px;
+    padding-top: 30px;
+  }
+  .image14{
+    height:250px;
+    width:400px;
+    padding-left:500px;
+    padding-top: 30px; 
+  }
+  .image16{
+    height:250px;
+    width:400px;
+    padding-left:500px;
+    padding-top: 30px;
+  }
+  .image18{
+    height:250px;
+    width:400px;
+    padding-left:500px;
+    padding-top: 30px;
+  }
+  .image20{
+    height:250px;
+    width:500px;
+    padding-left:450px;
+    padding-top: 30px;
+  }
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+  footer {
+    /* position: fixed;   */
+    background: rgb(161, 199, 177);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 600px;
+    
+
+  }
+
+  footer::before {
+    content: '';
+    /* position: absolute;   */
+    left: 0;
+    top: 100px;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+  }
+
+  footer .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+  }
+
+  footer .content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .content .top .logo-details {
+    color: #000;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
+  .content .top .media-icons {
+    display: flex;
+  }
+
+  .content .top .media-icons a {
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+
+  .top .media-icons a:nth-child(1) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(1):hover {
+    color: #4267B2;
+    background: #fff;
+  }
+
+  .top .media-icons a:nth-child(2) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(2):hover {
+    color: #1DA1F2;
+    background: #fff;
+  }
+
+  .top .media-icons a:nth-child(3) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(3):hover {
+    color: #E1306C;
+    background: #fff;
+  }
+
+  /* .top .media-icons a:nth-child(4){  
+  background: #0077B5;  
+ }  
+ .top .media-icons a:nth-child(4):hover{  
+  color: #0077B5;  
+  background: #fff;  
+ }   */
+  .top .media-icons a:nth-child(4) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(4):hover {
+    color: #FF0000;
+    background: #fff;
+  }
+
+  footer .content .link-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .content .link-boxes .box {
+    width: calc(100% / 5 - 10px);
+  }
+
+  .content .link-boxes .box .link_name {
+    color: #000;
+    font-size: 25px;
+    font-weight: 650;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .link-boxes .box .link_name::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: #000;
+  }
+
+  .content .link-boxes .box li {
+    margin: 6px 0;
+    list-style: none;
+  }
+
+  .content .link-boxes .box li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease
+  }
+
+  .content .link-boxes .box li a:hover {
+    opacity: 2;
+    text-decoration: none;
+  }
+
+  .content .link-boxes .input-box {
+    margin-right: 55px;
+  }
+
+  .link-boxes .input-box input {
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #AFAFB6;
+    background: #140B5C;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #000;
+    margin-top: 5px;
+  }
+
+  .link-boxes .input-box input::placeholder {
+    color: #AFAFB6;
+    font-size: 16px;
+  }
+
+  .link-boxes .input-box input[type="button"] {
+    background: #000;
+    color: #140B5C;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+
+  .input-box input[type="button"]:hover {
+    opacity: 1;
+  }
+
+  footer .bottom-details {
+    width: 100%;
+    background: #2c303a;
+  }
+
+  footer .bottom-details .bottom_text {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+  .bottom-details .bottom_text a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  .bottom-details .bottom_text a {
+    margin-right: 10px;
+  }
+
+  /Media query/
+
+
+  @media (max-width: 900px) {
+    footer .content .link-boxes {
+      flex-wrap: wrap;
+    }
+
+    footer .content .link-boxes .input-box {
+      width: 40%;
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    footer {
+      position: relative;
+    }
+
+    .content .top .logo-details {
+      font-size: 26px;
+    }
+
+    .content .top .media-icons a {
+      height: 35px;
+      width: 35px;
+      font-size: 14px;
+      line-height: 35px;
+    }
+
+    footer .content .link-boxes .box {
+      width: calc(100% / 3 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+      width: 60%;
+    }
+
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    footer::before {
+      top: 145px;
+    }
+
+    footer .content .top {
+      flex-direction: column;
+    }
+
+    .content .top .media-icons {
+      margin-top: 16px;
+    }
+
+    footer .content .link-boxes .box {
+      width: calc(100% / 2 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+      width: 100%;
+    }
+  }
+
+  .last {
+    background-color: #000000eb;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    font-family: candara;
+    padding: 15px 450px;
+  }
+
+  .reserve {
+    padding: 4px;
+    word-spacing: 7px;
+    letter-spacing: 1px;
+
+
+  }
+
+  .reserve:hover {
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+  .no:hover {
+    cursor: auto;
+  }
+
+  .sig {
+    color: black;
+  }
+  .tet{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 40px;
+    padding-left: 380px;
+    padding-top: 50px;
+  }
+</style>
+<body>
+    <section>
+
+        <div class="container2">
+            <image src="https://cdn.shopify.com/s/files/1/2289/1873/files/Small_portion_of_food_artistic-min_8edf1358-d9e2-4923-a2a1-704af3217bb1.jpg?v=1668530045" class="chef"></image>
+        </div>
+        <h1 class="container3">MENU</h1>
+        <p style="font-size:18px" class="container4">Clair de lune is a progression of rare and beautiful ingredients where texture, flavour and harmony is paramount.</p>
+
+          <P style="font-size:18px" class="container4"> Continually inspired by nature, the creative process for chef Peter Gilmore begins in working closely with the farmers, fishermen, producers and artisans who cultivate bespoke produce exclusively for Clair de lune. For each dish, the growth of every element and the selection of every ceramic piece is carefully considered and crafted for its role in the dining experience.
+            
+          </p>
+          <P style="font-size:18px" class="container4">Clair de lune brings a personal, interactive passage for diners through Peter Gilmore’s culinary evolution.</P>
+    </section>
+    <section>
+        <h1>SIX-COURSE MENU</h1>
+    </section>
+    <section>
+        <div class="cont1">The Six-course menu is available at lunch and dinner (7000/-).</div>
+        <div class="cont2">1. Pajeon(Scallion pancake)</div>
+        <div class="cont3">eggs, wheat, flour, rice flour and grilled scallions</div>
+        <div class="image1">
+          <img src="https://blog.onedaykorea.com/wp-content/uploads/2017/07/Pajeon_%E5%89%AF%E6%9C%AC.png" class="image2">
+        </div>
+        <div class="cont4">2. Sujeonggwa</div>
+        <div class="cont5">persimmon-cinnamon punch,Rice punch</div>
+        <div class="image3">
+          <img src="https://img.etimg.com/thumb/msid-77633197,width-1200,height-900,imgsize-722050,overlay-etpanache/photo.jpg" class="image4">
+        </div>
+        <div class="cont6">3. Gimbap</div>
+        <div class="cont7">cucumber, carrot, crab, vegetables,</div>
+        <div class="cont8">egg,wrapped in seaweed </div>
+        <div class="image5">
+          <img src="https://blog.onedaykorea.com/wp-content/uploads/2017/07/Vegetable_gimbap-600x400.jpg" class="image6">
+        </div>
+        <div class="cont9">4. Sundubu Jjigae</div>
+        <div class="cont10">soft tofu,mushrooms, onion, zucchini</div>
+        <div class="cont11"> gochujang,gochu garu</div>
+        <div class="image7">
+          <img src="https://blog.onedaykorea.com/wp-content/uploads/2017/07/Sundubu-Jjigae_%E5%89%AF%E6%9C%AC.png" class="image8">
+        </div>
+        <div class="cont12">5. Fried Chicken</div>
+        <div class="cont13">spicy, garlic, honey butter,soy sauce</div>
+        <div class="image9">
+          <img src="https://blog.onedaykorea.com/wp-content/uploads/2017/07/10622176715_9042d03de9_z.jpg" class="image10">
+        </div>
+        <div class="cont14">6. Doekbokki</div>
+        <div class="cont15">fish cakes, vegetables and a cooked egg</div>
+        <div class="image11">
+          <img src="https://static.onedaykorea.com/wp-content/uploads/2014/09/DOEK.jpg" class="image12">
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+    
+    <hr>
+    <br>
+        <section>
+            <h1 class="hh">FOUR-COURSE MENU</h1>
+        </section>
+        <div class="con1">The Four-course menu is available at lunch and dinner (5000/-).</div>
+        <div class="con2">1. Naengmyeon</div>
+        <div class="con3">sliced cucumbers,a hard-boiled egg</div>
+        <div class="image13">
+          <img src="https://tong.visitkorea.or.kr/cms/resource/28/771628_image2_1.jpg" class="image14">
+        </div>
+        <div class="con4">2. Kimchi</div>
+        <div class="con5"> spicy pepper flakes, garlic, chives, onions </div>
+        <div class="image15">
+          <img src="https://static.onedaykorea.com/wp-content/uploads/2014/09/KIMCHI.jpg" class="image16">
+        </div>
+        <div class="con6">3. Budae Jjigae</div>
+        <div class="con7"> pepper, rice cake and Gojujang</div>
+        <div class="image17">
+          <img src="https://static.onedaykorea.com/wp-content/uploads/2017/02/3.jpg" class="image18">
+        </div>
+        <div class="con8">4. Bingsu </div>
+        <div class="con11">Caramel, Green Tea, Strawberry, Cheesecake</div>
+        <div class="image19">
+          <img src="https://tong.visitkorea.or.kr/cms/resource_etc/10/2390410_image_3.jpg" class="image20">
+        </div>
+        <br>
+        <div class="tet">‘‘If t doesn't taste good it doesn't go on the menu’’</div>
+        <br>
+        <br>
+        <footer>
+          <div class="content">
+            <div class="top">
+              <div class="logo-details">
+                <span class="logo_name">CLAIR DE</span>
+                <p>LUNE &#127869 &#127869 &#127869</p>
+              </div>
+              <div class="media-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/arlogreyaustin/"><i class="fa fa-instagram"></i></a>
+                <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   -->
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="link-boxes">
+              <ul class="box">
+                <li class="link_name">SITEMAP</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Kristen Kish</a></li>
+                <li><a href="#">Meet the Team</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+              <ul class="box">
+                <li class="link_name">LOCATION</li>
+                <li><a href="#" class="no">111 E Cesar Chavez St,</a></li>
+                <li><a href="#" class="no">SEOUL, TX 78701,</a></li>
+                <li><a href="#" class="no">KOREA.</a></li>
+                <li><a href="#" class="no">Phone no : 99 &nbsp1274&nbsp 0244</a></li>
+              </ul>
+              <ul class="box">
+                <li class="link_name">OPENING HOURS</li>
+                <li><a href="#" class="no">LUNCH</a></li>
+                <li><a href="#" class="no">Saturday and Sunday</a></li>
+                <li><a href="#" class="no">Reservetions from 12pm to 1.30pm </a></li>
+      
+                <li><a href="#" class="no">DINNER</a></li>
+                <li><a href="#" class="no">Thursday to Sunday</a></li>
+                <li><a href="#" class="no">Reservations from 6pm to 8.45pm</a></li>
+              </ul>
+              <ul class="box">
+                <li class="link_name">RESERVETIONS</li>
+                <li><a href="#" class="reserve">MAKE A RESRVETION</a></li>
+                <li><a href="#" class="no">Tel no : 512-478-2991</a></li>
+      
+              </ul>
+            </div>
+          </div>
+          </div>
+        </footer>
+        <div class="last">
+          <span class="last2">© CLAIR DE LUNE 2023 ALL RIGHTS RESERVED</span>
+        </div>
+       
+    </section>
+    </body>
+</html>

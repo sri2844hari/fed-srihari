@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>SAMPLE 1</title>
+</head>
+<style>
+  body {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  img {
+    height: 730px;
+    width: 1520px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .firstcontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .center {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    animation: fadeIn 3.5s;
+    font-size: 110px;
+    font-weight: 500;
+
+
+
+
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .righttop {
+    position: absolute;
+    top: 42px;
+    right: 30px;
+    padding: 7px;
+    word-spacing: 7px;
+    border: 3px solid rgba(255, 252, 252, 0.789);
+    letter-spacing: 1px;
+
+
+
+
+  }
+
+  .righttop:hover {
+    color: black;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    transition: 0.8s;
+
+  }
+
+  :root {
+    --sidebar-width: 300px;
+    --toggler-size: 40px;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 0.8rem;
+  }
+
+  .wrapper {
+    min-height: 0vh;
+    min-width: 50vw;
+    background: AliceBlue;
+    display: flex;
+  }
+
+  .sidebar {
+    width: var(--sidebar-width);
+    transform: translateX(calc(var(--sidebar-width) * -1));
+    background: linear-gradient(to bottom right, whitesmoke, lightgray);
+    background-size: 400% 400%;
+    background-position: 90% 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: .5;
+    transition: transform .6s, background-position 1s .6s;
+  }
+
+  .input-toggler:checked~.sidebar {
+    opacity: .9;
+    transform: translateX(0);
+    background-position: 0 0;
+  }
+
+
+
+  .menu {
+    list-style-type: none;
+  }
+
+  .menu__link {
+    color: rgba(0, 0, 0, 0.526);
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 3rem;
+    line-height: 5rem;
+    position: relative;
+
+  }
+
+
+  .menu__link:hover {
+    color: #000;
+  }
+
+  .menu__link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+
+  }
+
+  a:hover::before {
+    transform: scaleX(1);
+  }
+
+
+
+
+
+  .menu-toggler {
+    display: block;
+    width: var(--toggler-size);
+    height: var(--toggler-size);
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+
+
+  .menu-toggler__line {
+    height: calc(var(--toggler-size) / 5);
+    background: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition-property: transform, opacity;
+    transition-duration: .5s, .25s;
+    transition-delay: 0s, .5s;
+    animation-name: slidein;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+  }
+
+  .input-toggler:checked~.menu-toggler .menu-toggler__line {
+    transition-delay: .25s, 0s;
+  }
+
+
+  .menu-toggler__line:nth-child(2) {
+    top: calc(var(--toggler-size) / 5 * 2);
+    animation-duration: .6s;
+  }
+
+  .menu-toggler__line:nth-child(3) {
+    top: calc(var(--toggler-size) / 5 * 4);
+    animation-duration: .7s;
+  }
+
+  .input-toggler {
+    display: none;
+
+  }
+
+  .input-toggler:checked~.menu-toggler .menu-toggler__line {
+    background: rgba(0, 0, 0, 0.74);
+  }
+
+  .input-toggler:checked~.menu-toggler .menu-toggler__line:nth-child(1) {
+    transform: translateY(calc(var(--toggler-size) / 5 * 2)) rotate(45deg);
+  }
+
+  .input-toggler:checked~.menu-toggler .menu-toggler__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .input-toggler:checked~.menu-toggler .menu-toggler__line:nth-child(3) {
+    transform: translateY(calc(var(--toggler-size) / 5 * -2)) rotate(-45deg);
+  }
+
+
+
+
+  @keyframes slidein {
+    from {
+      left: -200%;
+      right: 200%;
+    }
+
+    to {
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .linux-img {
+
+    height: 500px;
+
+    width: 750px;
+
+    margin-left: 0%;
+
+    float: left;
+    padding-left: 5px;
+
+  }
+
+  .linux-details {
+
+    width: 80%;
+
+    padding: 0%;
+
+  }
+
+  .text1 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+
+    padding-top: 150px;
+    font-family: Trebuchet;
+    padding-left: 18px;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+
+    font-family: Century Gothic;
+    padding-left: 20px;
+
+
+  }
+
+  .type {
+    padding-left: 770px;
+    padding-top: 20px;
+  }
+
+  button {
+    background-color: white;
+    padding: 10px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+
+  button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .container2 {
+    float: right;
+    padding-top: 175px;
+    padding-right: 5px;
+
+  }
+
+  .chef {
+    width: 750px;
+    height: 500px;
+
+  }
+
+  .container3 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 160px;
+    font-family: Trebuchet;
+    padding-left: 18px;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-family: Century Gothic;
+    padding-left: 20px;
+  }
+
+  .type2 {
+
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  button {
+    background-color: white;
+    padding: 10px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+
+  button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .linuximg {
+    height: 500px;
+
+    width: 750px;
+    float: left;
+
+  }
+
+  .linux-detail {
+    padding-top: 170px;
+    padding-left: 3px;
+  }
+
+  .container5 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+
+    padding-top: 150px;
+    font-family: Trebuchet;
+    padding-left: 18px;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .container6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+
+    font-family: Century Gothic;
+    padding-left: 20px;
+  }
+
+  button {
+    background-color: white;
+    padding: 10px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+
+  button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .banner1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: serif;
+
+
+  }
+
+  .topleft {
+    position: absolute;
+    top: 250px;
+    left: 16px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+  }
+
+  .topleft2 {
+    position: absolute;
+    top: 310px;
+    left: 16px;
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+
+  .topleft3 {
+    position: absolute;
+    top: 450px;
+    left: 16px;
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  .banner11 {
+    padding-top: 10px;
+    opacity: 90%;
+
+  }
+
+  .topleft4 {
+
+    position: absolute;
+    top: 600px;
+    left: 680px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    border: 2px solid white;
+    padding: 5px;
+  }
+
+  .topleft4:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.667);
+    transition: .6s;
+    cursor: pointer;
+  }
+
+  .banner22 {
+    width: 1520px;
+    opacity: 90%;
+
+  }
+
+  .banner2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: serif;
+  }
+
+  .toleft {
+    position: absolute;
+    top: 180px;
+    left: 16px;
+    font-size: 50px;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+  }
+
+  .toleft2 {
+    position: absolute;
+    top: 250px;
+    left: 16px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+
+  .toleft3 {
+    position: absolute;
+    top: 400px;
+    left: 16px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+
+  .toleft4 {
+    position: absolute;
+    top: 470px;
+    left: 16px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
+
+
+
+  .toleft5 {
+
+    position: absolute;
+    top: 600px;
+    left: 680px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    border: 2px solid white;
+    padding: 5px;
+  }
+
+  .toleft5:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.863);
+    transition: .6s;
+    cursor: pointer;
+  }
+
+  /* input {
+  margin:10px;
+  padding:10px;
+  
+  
+}
+#email{
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  
+} */
+  .date {
+    font-size: 40px;
+    font-family: Candara;
+    padding-top: 100px;
+    padding-left: 350px;
+    word-spacing: 1px;
+    letter-spacing: 5px;
+  }
+
+  .date2 {
+    font-size: 20px;
+    font-family: Candara;
+    padding-top: 10px;
+    padding-left: 410px;
+  }
+
+  .sign {
+    padding-left: 700px;
+    padding-top: 40px;
+  }
+
+  .up {
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 500;
+
+  }
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+  footer {
+    /* position: fixed;   */
+    background: rgb(161, 199, 177);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 480px;
+
+  }
+
+  footer::before {
+    content: '';
+    /* position: absolute;   */
+    left: 0;
+    top: 100px;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+  }
+
+  footer .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+  }
+
+  footer .content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .content .top .logo-details {
+    color: #000;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
+  .content .top .media-icons {
+    display: flex;
+  }
+
+  .content .top .media-icons a {
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+
+  .top .media-icons a:nth-child(1) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(1):hover {
+    color: #4267B2;
+    background: #fff;
+  }
+
+  .top .media-icons a:nth-child(2) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(2):hover {
+    color: #1DA1F2;
+    background: #fff;
+  }
+
+  .top .media-icons a:nth-child(3) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(3):hover {
+    color: #E1306C;
+    background: #fff;
+  }
+
+  /* .top .media-icons a:nth-child(4){  
+  background: #0077B5;  
+ }  
+ .top .media-icons a:nth-child(4):hover{  
+  color: #0077B5;  
+  background: #fff;  
+ }   */
+  .top .media-icons a:nth-child(4) {
+    background: none;
+  }
+
+  .top .media-icons a:nth-child(4):hover {
+    color: #FF0000;
+    background: #fff;
+  }
+
+  footer .content .link-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .content .link-boxes .box {
+    width: calc(100% / 5 - 10px);
+  }
+
+  .content .link-boxes .box .link_name {
+    color: #000;
+    font-size: 25px;
+    font-weight: 650;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .link-boxes .box .link_name::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: #000;
+  }
+
+  .content .link-boxes .box li {
+    margin: 6px 0;
+    list-style: none;
+  }
+
+  .content .link-boxes .box li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease
+  }
+
+  .content .link-boxes .box li a:hover {
+    opacity: 2;
+    text-decoration: none;
+  }
+
+  .content .link-boxes .input-box {
+    margin-right: 55px;
+  }
+
+  .link-boxes .input-box input {
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #AFAFB6;
+    background: #140B5C;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #000;
+    margin-top: 5px;
+  }
+
+  .link-boxes .input-box input::placeholder {
+    color: #AFAFB6;
+    font-size: 16px;
+  }
+
+  .link-boxes .input-box input[type="button"] {
+    background: #000;
+    color: #140B5C;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+
+  .input-box input[type="button"]:hover {
+    opacity: 1;
+  }
+
+  footer .bottom-details {
+    width: 100%;
+    background: #2c303a;
+  }
+
+  footer .bottom-details .bottom_text {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+  .bottom-details .bottom_text a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  .bottom-details .bottom_text a {
+    margin-right: 10px;
+  }
+
+  /Media query/
+
+
+  @media (max-width: 900px) {
+    footer .content .link-boxes {
+      flex-wrap: wrap;
+    }
+
+    footer .content .link-boxes .input-box {
+      width: 40%;
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    footer {
+      position: relative;
+    }
+
+    .content .top .logo-details {
+      font-size: 26px;
+    }
+
+    .content .top .media-icons a {
+      height: 35px;
+      width: 35px;
+      font-size: 14px;
+      line-height: 35px;
+    }
+
+    footer .content .link-boxes .box {
+      width: calc(100% / 3 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+      width: 60%;
+    }
+
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    footer::before {
+      top: 145px;
+    }
+
+    footer .content .top {
+      flex-direction: column;
+    }
+
+    .content .top .media-icons {
+      margin-top: 16px;
+    }
+
+    footer .content .link-boxes .box {
+      width: calc(100% / 2 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+      width: 100%;
+    }
+  }
+
+  .last {
+    background-color: #000000eb;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    font-family: candara;
+    padding: 15px 450px;
+  }
+
+  .reserve {
+    padding: 4px;
+    word-spacing: 7px;
+    letter-spacing: 1px;
+
+
+  }
+
+  .reserve:hover {
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+  .no:hover {
+    cursor: auto;
+  }
+
+  .sig {
+    color: black;
+  }
+
+  /* .butt{
+    
+    background-color:none;
+    padding: 10px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  } */
+  /* 
+  but:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+  } */
+</style>
+
+<body>
+  <section>
+    <div class="firstcontainer">
+      <img src="https://cdn.mos.cms.futurecdn.net/bwsDTWetLQuuwXQo44J5ZV.jpeg">
+      <div class="center">
+        Clair De Lune
+
+
+      </div>
+      <div class="righttop">
+        <a href="#"> MAKE A RESERVATION</a>
+      </div>
+
+    </div>
+    <div class="wrapper">
+      <input type="checkbox" id="menuToggler" class="input-toggler" />
+      <label for="menuToggler" class="menu-toggler">
+        <span class="menu-toggler__line"></span>
+        <span class="menu-toggler__line"></span>
+        <span class="menu-toggler__line"></span>
+      </label>
+      <aside class="sidebar">
+        <ul class="menu">
+          <li class="menu_item"><a class="menu_link" href="#Home">Home</a></li>
+          <li class="menu_item"><a class="menu_link" href="#Blog">Blog</a></li>
+          <li class="menu_item"><a class="menu_link" href="#Portfolio">Menu</a></li>
+          <li class="menu_item"><a class="menu_link" href="#About">About</a></li>
+          <li class="menu_item"><a class="menu_link" href="#Contact">Contact</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+  <section>
+    <div class='linux-details'>
+      <img
+        src='https://www.visitguernsey.com//media/w2jl22bq/tennerfest.jpeg?anchor=center&mode=crop&quality=90&width=1500&height=900&rnd=132944077029070000'
+        class='linux-img'>
+    </div>
+    <h1 class="text1">MENU</h1>
+    <p style="font-size: 18px" class="text2">A progression of rare and beautiful ingredients where texture, flavour and
+      harmony is paramount. Delve into the Clair De Lune dining experience with Kristen Kish’s Menu and a thoughtfully
+      curated
+      Wine List by Head Sommeli.</p>
+    <div class="type">
+      <button><a href="sample4.html">.</a>READ MORE</button>
+    </div>
+  </section>
+  <section>
+    <div class="container2">
+      <image src="https://cdn.justluxe.com/articles/images/news/16710434577198.jpg" class="chef"></image>
+    </div>
+
+    <h1 class="container3">Kristen Kish</h1>
+    <p style="font-size:18px" class="container4">Kristen Kish is a Korean-born American chef known for winning the tenth
+      season of Top Chef. She was formerly chef de cuisine at Menton in the Fort Point neighborhood of Boston. Ms.Kish
+      leads the Clair De Luna team with a focus on excellence, innovation and hospitality.
+    </p>
+    <div class="type2">
+      <button><a href="sample6.html">.</a>READ MORE</button>
+    </div>
+  </section>
+
+
+  <section>
+    <div class='linux-detail'>
+      <img
+        src='https://juantequila.net/wp-content/uploads/2020/03/Helpful-Tips-for-Planning-an-Upcoming-Party-or-Event-at-a-Restaurant-.jpg'
+        class='linuximg'>
+    </div>
+    <h1 class="container5">EVENTS</h1>
+    <p style="font-size: 18px" class="container6">Celebrate at one of Korea’s most awarded restaurants, with panoramic
+      views encompassing the Han River Bridge and Seoul City. From intimate dinner parties in the Private Dining Room,
+      to long lunches in the spectacular Upper Tower, to large cocktail events in The Green Room – Clair De Luna
+      delivers an immersive dining experience with views like no other.</p>
+    <div class="type">
+      <button><a href="sample5.html">.</a>READ MORE</button>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="banner1">
+      <img src="https://winechateau.co.uk/wp-content/uploads/2022/07/Red-Wine-Banner.jpg" class="banner11">
+      <div class="topleft">DUST OFF YOUR</div>
+      <div class="topleft2">BOTTLES</div>
+      <div class="topleft3">The opportunity wine enthusiasts have been waiting for – Clair De Lune is unlocking the
+        private dining room for guests to bring along their best bottles to enjoy over a weekend lunch. If you’ve got a
+        cellar full of wine, or even just ‘that’ bottle you’ve been desperate to dust off, there is no better way to
+        enjoy it than in one of Korea’s best restaurants. </div>
+      <div class="topleft4">
+        <a href="sample3.html" class="topleft44">READ MORE</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="banner2">
+      <img src="https://lifeandthyme.com/wp-content/uploads/2020/08/kristen-kish-featured-L.jpg" class="banner22">
+      <div class="toleft">KRISTEN KISH’s</div>
+      <div class="toleft2">MAFALDINE WITH CHAMPIGNON SAUCE</div>
+      <div class="toleft3"> Top Chef winner Kristen Kish's mafaldine with champignon sauce.Her knack for working magic
+        with mushrooms became known to the public during her winning 2013 stint on Top Chef season 10.</div>
+      <div class="toleft4">“People often tell our servers, ‘Oh, I love the way she cooked mushrooms’ or ‘She taught me
+        how to do so much with mushrooms,” Kish says. “It’s something I don’t think will be forgotten, and I’m okay with
+        that. I’m associated with cooking white button mushrooms until the end of time!”</div>
+      <div class="toleft5">
+       <a href="sample7.html">..READ MORE</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="signup">
+      <h1 class="date">KEEP UP TO DATE WITH CLAIR DE LUNE</h1>
+      <p class="date2">Sign up to be the first to receive special news and event updates from Clair De Lune. </p>
+    </div>
+    <div class="sign">
+
+      <button class="up"><a href="form.php" class="sig">.</a>SIGN UP</button>
+    </div>
+
+  </section>
+
+  <br>
+  <br>
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <span class="logo_name">CLAIR DE</span>
+          <p>LUNE &#127869 &#127869 &#127869</p>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/arlogreyaustin/"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/KristenLKish/"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/arlogreyaustin/"><i class="fa fa-instagram"></i></a>
+          <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   -->
+          <a href="https://www.youtube.com/watch?v=f16Ijk6yoQY"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">SITEMAP</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Kristen Kish</a></li>
+          <li><a href="#">Meet the Team</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">LOCATION</li>
+          <li><a href="#" class="no">111 E Cesar Chavez St,</a></li>
+          <li><a href="#" class="no">SEOUL, TX 78701,</a></li>
+          <li><a href="#" class="no">KOREA.</a></li>
+          <li><a href="#" class="no">Phone no : 99 &nbsp1274&nbsp 0244</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">OPENING HOURS</li>
+          <li><a href="#" class="no">LUNCH</a></li>
+          <li><a href="#" class="no">Saturday and Sunday</a></li>
+          <li><a href="#" class="no">Reservetions from 12pm to 1.30pm </a></li>
+
+          <li><a href="#" class="no">DINNER</a></li>
+          <li><a href="#" class="no">Thursday to Sunday</a></li>
+          <li><a href="#" class="no">Reservations from 6pm to 8.45pm</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">RESERVETIONS</li>
+          <li><a href="#" class="reserve">MAKE A RESRVETION</a></li>
+          <li><a href="#" class="no">Tel no : 512-478-2991</a></li>
+
+        </ul>
+      </div>
+    </div>-+
+    </div>
+  </footer>
+  <div class="last">
+    <span class="last2">© CLAIR DE LUNE 2023 ALL RIGHTS RESERVED</span>
+  </div>
+
+
+</body>
+
+</html>
